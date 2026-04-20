@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "NXMap V2.0",
+    "category": "Sustainability",
+    "description": "Worked on the carbon footprint sector. Designed reusable components and developed RESTful API services.",
+    "tech": [
+      "React.js",
+      "MUI",
+      "Mobx",
+      "Express.js",
+      "Mongoose",
+      "MongoDB"
+    ],
+    "images": [
+      "/nxmap.png"
+    ],
+    "isPrivate": true
+  },
+  {
+    "id": 2,
+    "title": "Personal Ecosystem App (In active development)",
+    "category": "Life Management",
+    "description": "A comprehensive personal management hub featuring integrated modules for finance analytics, kitchen/meal planning, and health tracking. Designed for a holistic view of personal data with real-time insights.",
+    "tech": [
+      "Next.js",
+      "Tanstack-Query",
+      "Redux-Toolkit",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "/dashboard.png",
+      "/finance1.png",
+      "/finance2.png",
+      "/finance3.png",
+      "/finance4.png",
+      "/finance5.png"
+    ],
+    "github": "https://github.com/kaungmyattun21/Personal-Ecosystem/tree/master"
+  }
+]

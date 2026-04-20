@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "company": "Evercomm Singapore",
+    "role": "Full Stack Developer",
+    "period": "2023 - Present",
+    "description": "Working as a fullstack web developer, focusing on the front-end development of carbon footprints tracking sector using React.js and Express.js."
+  },
+  {
+    "id": 2,
+    "company": "CO2 Connect",
+    "role": "Front End Developer",
+    "period": "2023 - 2024",
+    "description": "Worked as a front-end developer, focusing on the development of user interface designs using React.js, while collaborating with teams based in Singapore."
+  }
+]
