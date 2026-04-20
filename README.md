@@ -21,27 +21,10 @@ A high-performance, minimalist engineering portfolio built with Next.js 16 and R
 - **Responsive Design**: Mobile-first architecture ensuring seamless experiences across all device sizes.
 - **Clean Code Architecture**: Modular component structure and decoupled data management (`projects.json`, `experience.json`).
 
-## 🛠️ Getting Started
+## ⚡ Quick Commands
 
-### Prerequisites
-
-- Node.js 20+
-- npm / pnpm / yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kaungmyattun21/portfolio_v2.git
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
 
 ## 📦 Deployment
 
