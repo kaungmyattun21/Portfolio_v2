@@ -10,8 +10,17 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Kaung Myat Tun | Software Engineer & Full Stack Developer",
-  description: "Software Engineer specializing in React, Next.js, and Clean Architecture. Focused on building scalable, clean, and maintainable web applications.",
-  keywords: ["Software Engineer", "Full Stack Developer", "React", "Next.js", "Express.js", "Clean Architecture"],
+  description:
+    "Software Engineer specializing in React, Next.js, and System Design. Focused on building scalable, clean, and maintainable web applications.",
+  keywords: [
+    "Software Engineer",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Express.js",
+    "Clean Architecture",
+    "System Design",
+  ],
   authors: [{ name: "Kaung Myat Tun" }],
   creator: "Kaung Myat Tun",
   robots: {
@@ -21,15 +30,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kaungmyattun.com", // Assuming this is the domain, can be updated later
+    url: "https://kaungmyattun.vercel.app", // Deployed Vercel URL
     title: "Kaung Myat Tun | Software Engineer",
-    description: "Engineering high-performance web applications and scalable APIs.",
+    description:
+      "Engineering high-performance web applications and scalable APIs.",
     siteName: "Kaung Myat Tun Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Kaung Myat Tun | Software Engineer",
-    description: "Engineering high-performance web applications and scalable APIs.",
+    description:
+      "Engineering high-performance web applications and scalable APIs.",
   },
 };
 
