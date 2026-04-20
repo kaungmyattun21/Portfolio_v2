@@ -30,17 +30,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kaungmyattun.vercel.app", // Deployed Vercel URL
+    url: "https://kaungmyattun.vercel.app",
     title: "Kaung Myat Tun | Software Engineer",
     description:
       "Engineering high-performance web applications and scalable APIs.",
     siteName: "Kaung Myat Tun Portfolio",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Kaung Myat Tun Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kaung Myat Tun | Software Engineer",
     description:
       "Engineering high-performance web applications and scalable APIs.",
+    images: ["/opengraph-image.png"],
   },
 };
 
