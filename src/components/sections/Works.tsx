@@ -14,7 +14,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
     if (isHovered && project.images?.length > 1) {
       interval = setInterval(() => {
         setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
-      }, 1500);
+      }, 2000);
     } else if (!isHovered) {
       setCurrentImageIndex(0);
     }
@@ -29,7 +29,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8 }}
     >
-      <div 
+      <div
         className="aspect-video relative mb-6 rounded-lg overflow-hidden glass-panel group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -57,7 +57,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               />
             </motion.div>
           ) : (
-            <div className="w-full h-full bg-slate-800/50 flex flex-col items-center justify-center text-slate-400">
+            <div className="w-full h-full bg-slate-800/50 flex flex-col items-center justify-center text-slate-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12 mb-4 opacity-50"
@@ -84,7 +84,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               <div
                 key={idx}
                 className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${
-                  idx === currentImageIndex ? "bg-cyan-400" : "bg-white/30"
+                  idx === currentImageIndex ? "bg-cyan-400" : "bg-white/50"
                 }`}
               />
             ))}
@@ -104,17 +104,21 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
             className="group/link flex items-center gap-2 px-3 py-1.5 border border-cyan-500/20 rounded hover:bg-cyan-500/10 hover:border-cyan-500/40 transition-all duration-300 cursor-none"
             aria-label="View Github Repository"
           >
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-cyan-500/80">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-5 h-5 text-cyan-400"
+            >
               <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
             </svg>
-            <svg 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              className="w-3.5 h-3.5 text-cyan-500/80 transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-3.5 h-3.5 text-cyan-400 transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
             >
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="7 7 17 7 17 17"></polyline>
@@ -122,8 +126,16 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           </a>
         )}
         {project.isPrivate && (
-          <div className="flex items-center gap-2 px-3 py-1.5 border border-slate-700/30 rounded text-[10px] uppercase tracking-widest text-slate-500 font-medium whitespace-nowrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
+          <div className="flex items-center gap-2 px-3 py-1.5 border border-slate-700/30 rounded text-[10px] uppercase tracking-widest text-slate-300 font-medium whitespace-nowrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-3.5 h-3.5"
+            >
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
             </svg>
@@ -132,7 +144,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         )}
       </div>
 
-      <p className="text-slate-400 font-light leading-relaxed mb-6">
+      <p className="text-slate-300 font-light leading-relaxed mb-6">
         {project.description}
       </p>
 
@@ -140,7 +152,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         {project.tech.map((tech: string) => (
           <span
             key={tech}
-            className="text-[10px] uppercase tracking-wider border border-slate-700/50 px-3 py-1 rounded-sm text-slate-400 bg-slate-800/10"
+            className="text-[10px] uppercase tracking-wider border border-slate-700/50 px-3 py-1 rounded-sm text-slate-300 bg-slate-800/10"
           >
             {tech}
           </span>
@@ -158,7 +170,7 @@ export function Works() {
     >
       <div className="flex items-center gap-6 mb-16">
         <div className="w-12 h-px bg-slate-700"></div>
-        <h2 className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
+        <h2 className="text-sm tracking-[0.2em] uppercase text-slate-300 font-medium">
           Selected Works
         </h2>
       </div>

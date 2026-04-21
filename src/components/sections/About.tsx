@@ -11,7 +11,7 @@ export function About() {
     >
       <div className="flex items-center gap-6 mb-12">
         <div className="w-12 h-px bg-slate-700"></div>
-        <h2 className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
+        <h2 className="text-sm tracking-[0.2em] uppercase text-slate-300 font-medium">
           About Me
         </h2>
       </div>
@@ -45,7 +45,7 @@ export function About() {
           className="flex-1 text-base md:text-xl font-light leading-relaxed text-slate-300 space-y-4 md:space-y-6"
         >
           <p>
-            I am a Software Engineer focused on Clean
+            I am a Software Engineer focused on System Design and Clean
             Architecture. While I specialize in React.js, Next.js and Express.js
             my passion lies in writing scalable, maintainable code that solves
             complex engineering challenges.
@@ -62,7 +62,7 @@ export function About() {
             <h3 className="text-xs md:text-sm tracking-[0.2em] uppercase text-cyan-500 font-medium mb-6">
               Core Technologies
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-2 text-xs md:text-sm tracking-widest uppercase text-slate-400">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-2 text-xs md:text-sm tracking-widest uppercase text-slate-300">
               {[
                 "TypeScript",
                 "React & Next.js",
@@ -72,7 +72,7 @@ export function About() {
                 "Prisma",
                 "Tanstack Query",
                 "Tailwind CSS",
-                "Docker"
+                "Docker",
               ].map((tech) => (
                 <div key={tech} className="flex items-center gap-3">
                   <span className="w-1 h-1 bg-cyan-500 rounded-full"></span>

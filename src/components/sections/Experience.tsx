@@ -8,7 +8,7 @@ export function Experience() {
     <section id="experience" className="py-24 px-8 md:px-16 border-t border-slate-800/50">
       <div className="flex items-center gap-6 mb-12">
         <div className="w-12 h-px bg-slate-700"></div>
-        <h2 className="text-sm tracking-[0.2em] uppercase text-slate-400 font-medium">
+        <h2 className="text-sm tracking-[0.2em] uppercase text-slate-300 font-medium">
           Experience
         </h2>
       </div>
@@ -24,7 +24,7 @@ export function Experience() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
           >
             <div className="md:col-span-1">
-              <span className="text-xs text-slate-400 tracking-widest uppercase mt-1 block">
+              <span className="text-xs text-slate-300 tracking-widest uppercase mt-1 block">
                 {exp.period}
               </span>
             </div>
@@ -36,7 +36,7 @@ export function Experience() {
               <h4 className="text-xs md:text-sm text-cyan-500 tracking-widest uppercase mb-6">
                 {exp.company}
               </h4>
-              <p className="text-slate-400 font-light leading-relaxed">
+              <p className="text-slate-300 font-light leading-relaxed">
                 {exp.description}
               </p>
             </div>

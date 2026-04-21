@@ -24,7 +24,7 @@ export function Hero() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-12 left-8 md:left-16 text-xs tracking-[0.2em] uppercase text-slate-400"
+        className="absolute bottom-12 left-8 md:left-16 text-xs tracking-[0.2em] uppercase text-slate-300"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}

@@ -6,11 +6,11 @@ export function Footer() {
   return (
     <footer className="px-8 py-12 md:px-16 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center mt-12 w-full">
       <div className="mb-6 md:mb-0">
-        <p className="text-xs text-slate-500 uppercase tracking-widest">
+        <p className="text-xs text-slate-400 uppercase tracking-widest">
           &copy; {new Date().getFullYear()} Kaung Myat Tun.
         </p>
       </div>
-      <div className="flex gap-6 text-slate-400">
+      <div className="flex gap-6 text-slate-300">
         <a
           href="https://github.com/kaungmyattun21"
           target="_blank"

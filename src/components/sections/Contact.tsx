@@ -16,7 +16,7 @@ export function Contact() {
           What&apos;s Next?
         </h2>
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-8 uppercase tracking-widest">Get In Touch</h3>
-        <p className="text-slate-400 font-light leading-relaxed mb-12 text-base md:text-lg">
+        <p className="text-slate-300 font-light leading-relaxed mb-12 text-base md:text-lg">
           Whether you have a question, a project proposal, or just want to say hi, 
           I&apos;ll try my best to get back to you! My inbox is always open. Let&apos;s build the future together.
         </p>
